@@ -43,10 +43,10 @@ axios
 // 				},
 // 			});
 
-			if (!isEmptyString(config.APP_SENTRY_TAG_CLIENT)) {
-				Sentry.setTag('client', config.APP_SENTRY_TAG_CLIENT);
-			}
-		}
+// 			if (!isEmptyString(config.APP_SENTRY_TAG_CLIENT)) {
+// 				Sentry.setTag('client', config.APP_SENTRY_TAG_CLIENT);
+// 			}
+// 		}
 
 		const apiService = new ApiService(config);
 
