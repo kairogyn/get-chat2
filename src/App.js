@@ -43,10 +43,10 @@ function App({ config, apiService }) {
 										path={['/salesbox/:token/:url']}
 										component={SalesBox}
 									></Route>
-									{/* <Route
+									<Route
 										path={['/login/error/:errorCase', '/']}
 										component={Login}
-									/> */}
+									/>
 								</RouteSwitch>
 							</Router>
 						</ApplicationContext.Provider>

@@ -122,7 +122,7 @@ export default function Login(props) {
 
 	return (
 		<div className="login">
-			<Fade in={true}>
+			{/* <Fade in={true}>
 				<div className="login__body">
 					<div className="login__body__logoWrapper">
 						<img
@@ -164,12 +164,12 @@ export default function Login(props) {
 						</Button>
 					</form>
 
-					{/* {isValidatingToken && (
+					 {isValidatingToken && (
 						<div className="login__validatingToken">
 							<h2>{t('Welcome')}</h2>
 							<p>{t('We are validating your session, please wait.')}</p>
 						</div>
-					)} */}
+					)} 
 
 					{loginError && <Alert severity="error">{t(loginError)}</Alert>}
 
@@ -183,7 +183,7 @@ export default function Login(props) {
 
 			<Backdrop className={classes.backdrop} open={isLoggingIn}>
 				<CircularProgress color="inherit" />
-			</Backdrop>
+			</Backdrop> */}
 		</div>
 	);
 }
