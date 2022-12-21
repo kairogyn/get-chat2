@@ -15,9 +15,9 @@
 /build
 
 # development
-/public/config.json
-/public/config.dev.json
-/public/config.development.json
+# /public/config.json
+# /public/config.dev.json
+# /public/config.development.json
 
 # misc
 .DS_Store

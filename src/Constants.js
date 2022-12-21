@@ -53,22 +53,22 @@ export const EMPTY_IMAGE_BASE64 =
 	'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 
 export const CALENDAR_NORMAL = {
-	lastDay: '[Yesterday at] H:mm', // LT
-	sameDay: '[Today at] H:mm',
+	lastDay: '[Ontem as] H:mm', // LT
+	sameDay: '[Hoje at] H:mm',
 	lastWeek: 'dddd [at] H:mm',
 	sameElse: 'MMMM D, yyyy',
 };
 
 export const CALENDAR_SHORT = {
-	lastDay: '[Yesterday]',
+	lastDay: '[Ontem]',
 	sameDay: 'H:mm',
 	lastWeek: 'dddd',
 	sameElse: 'MMM D, yyyy',
 };
 
 export const CALENDAR_SHORT_DAYS = {
-	lastDay: '[Yesterday]',
-	sameDay: '[Today]',
+	lastDay: '[Ontem]',
+	sameDay: '[Hoje]',
 	lastWeek: 'dddd',
 	sameElse: 'MMMM D, yyyy',
 };

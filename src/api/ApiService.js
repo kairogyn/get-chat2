@@ -7,7 +7,7 @@ import { getStorage, STORAGE_TAG_TOKEN } from '../helpers/StorageHelper';
 export class ApiService {
 	constructor(config) {
 		this.config = config;
-		this.apiBaseURL = config.API_BASE_URL;
+		this.apiBaseURL = localStorage.getItem('url');
 	}
 
 	handleRequest = (

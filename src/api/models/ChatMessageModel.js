@@ -212,7 +212,7 @@ export class ChatMessageModel {
 	}
 
 	generateMediaLink(id) {
-		return id ? `${window.config.API_BASE_URL}media/${id}` : undefined;
+		return id ? `${localStorage.getItem('url')}media/${id}` : undefined;
 	}
 
 	generateImageLink(includeTemplateHeader) {

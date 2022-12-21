@@ -841,9 +841,7 @@ function Sidebar(props) {
 									</Trans>
 								</span>
 							) : (
-								!isLoadingChats && (
-									<span>{t("You don't have any chats yet.")}</span>
-								)
+								!isLoadingChats && <span>{t('Você ainda não tem chats.')}</span>
 							)}
 						</span>
 					)}
@@ -950,7 +948,7 @@ function Sidebar(props) {
 				{currentUser?.isAdmin && (
 					<MenuItem
 						component={Link}
-						href={getHubURL(config.API_BASE_URL)}
+						href={getHubURL(localStorage.getItem('url'))}
 						target="_blank"
 						color="initial"
 					>

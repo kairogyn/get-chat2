@@ -72,7 +72,7 @@ function ChatTagsList(props) {
 
 				<div className="mt-3">
 					<Link
-						href={getHubURL(config.API_BASE_URL) + 'main/tag/'}
+						href={getHubURL(localStorage.getItem('url')) + 'main/tag/'}
 						target="_blank"
 					>
 						{t('Manage tags')}

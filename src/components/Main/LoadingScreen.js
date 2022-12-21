@@ -5,6 +5,8 @@ import { useTranslation } from 'react-i18next';
 import { Alert } from '@material-ui/lab';
 import packageJson from '../../../package.json';
 import { CircularProgress } from '@material-ui/core';
+import Lottie from 'react-lottie';
+import animationData from '../../assets/loading.json';
 
 function LoadingScreen(props) {
 	const { t } = useTranslation();
@@ -27,9 +29,28 @@ function LoadingScreen(props) {
 	//     props.setProgress(100);
 	// };
 
+	const defaultOptions = {
+		loop: 1,
+		autoplay: true,
+		animationData,
+	};
+
 	return (
 		<div className="loadingScreen">
-			<div className="loadingScreen__logoContainer">
+			<Lottie
+				options={defaultOptions}
+				height={400}
+				width={400}
+				isStopped={false}
+				isPaused={false}
+				eventListeners={[
+					{
+						eventName: 'complete',
+						callback: () => console.log('foi'),
+					},
+				]}
+			/>
+			{/* <div className="loadingScreen__logoContainer">
 				<img
 					src={process.env.REACT_APP_LOGO_BLACK_URL ?? '/logoblack.svg'}
 					alt="Logo"
@@ -63,16 +84,16 @@ function LoadingScreen(props) {
 						<a className="loadingScreen__link" href="mailto:support@get.chat">
 							{t('Contact us')}
 						</a>
-						{/* <span className="loadingScreen__link" onClick={skip}>
+						<span className="loadingScreen__link" onClick={skip}>
                             {t("Skip")}
-                        </span> */}
+                        </span>
 					</div>
 				</>
 			)}
 
 			<span className="loadingScreen__version">
 				Version: {packageJson.version}
-			</span>
+			</span> */}
 		</div>
 	);
 }

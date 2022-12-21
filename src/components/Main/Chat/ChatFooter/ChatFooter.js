@@ -262,14 +262,14 @@ function ChatFooter(props) {
 
 				{!props.isExpired && (
 					<div className="chat__footer__attachmentContainer desktopOnly">
-						<Tooltip title={t('Attachment')} placement="right">
+						<Tooltip title={t('Anexo')} placement="right">
 							<IconButton>
 								<AttachFile />
 							</IconButton>
 						</Tooltip>
 
 						<div className="chat__footer__attachmentContainer__options">
-							<Tooltip title={t('Contacts')} placement="right">
+							<Tooltip title={t('Contatos')} placement="right">
 								<IconButton
 									className="chat__footer__attachmentContainer__options__document"
 									onClick={openContactsModal}
@@ -278,7 +278,7 @@ function ChatFooter(props) {
 								</IconButton>
 							</Tooltip>
 
-							<Tooltip title={t('Documents')} placement="right">
+							<Tooltip title={t('Documentos')} placement="right">
 								<IconButton
 									className="chat__footer__attachmentContainer__options__document"
 									onClick={() => handleAttachmentClick(ACCEPT_DOCUMENT)}
@@ -317,7 +317,7 @@ function ChatFooter(props) {
 
 				{!props.isExpired && (
 					<Tooltip
-						title="Saved Responses"
+						title="Respostas salvas"
 						placement="top"
 						className="desktopOnly"
 					>

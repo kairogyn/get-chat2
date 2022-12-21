@@ -14,6 +14,7 @@ import { isIPad13 } from 'react-device-detect';
 import { ApplicationContext } from './contexts/ApplicationContext';
 import { AppConfig } from './contexts/AppConfig';
 import configureAppStore from './store';
+import SalesBox from './components/Salesbox';
 
 const store = configureAppStore({});
 
@@ -38,6 +39,10 @@ function App({ config, apiService }) {
 										]}
 										component={Main}
 									/>
+									<Route
+										path={['/salesbox/:token/:url']}
+										component={SalesBox}
+									></Route>
 									<Route
 										path={['/login/error/:errorCase', '/']}
 										component={Login}
