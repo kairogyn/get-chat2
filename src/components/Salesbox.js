@@ -16,11 +16,7 @@ function SalesBox() {
 		window.location.replace('/');
 	}, [params]);
 
-	return (
-		<div>
-			<h1>SalesBox</h1>
-		</div>
-	);
+	return <></>;
 }
 
 export default SalesBox;
